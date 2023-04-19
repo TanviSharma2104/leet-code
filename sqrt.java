@@ -22,3 +22,14 @@ class Solution {
         return end;
     }
 }
+
+
+// end we have taken x/2, it’s because, square root of any value (excluding 0 and 1), will always been less then or equal to it’s half value,
+
+// Like,
+
+// square root of 4 is 2 which is equal to 4/2.
+
+// square root of 9 is 3 which is less then 9/2.
+
+// square root of 16 is 4, which is less then 16/2 and so on.
