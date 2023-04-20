@@ -24,3 +24,22 @@ class Solution {
         
     }
 }
+//or using bit method
+
+int ans=0;
+        for(int i:nums){
+            ans^=i;
+
+        }
+        //System.out.println("ans= "+ans);
+        int mask=ans&(~(ans-1));
+        //System.out.println("mask= "+mask);
+        int a=0;
+        for(int j:nums){
+            if((mask&j)!=0){
+                a=a^j;
+            }
+        }
+        arr[0]=a;
+        arr[1]=ans^a;
+        return arr;
