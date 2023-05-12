@@ -31,5 +31,23 @@ class Solution {
         }
         prev.next=prev.next.next;
         return head;
+        
+        
+        //or using 2 pointers
+        ListNode temp=new ListNode();
+        temp.next=head;
+        ListNode a=temp;
+        ListNode b=temp;
+        for(int i=1;i<=n+1;i++){
+            a=a.next;
+        }
+        while(a!=null){
+
+            a=a.next;
+            b=b.next;
+        }
+        b.next=b.next.next;
+        return temp.next;
+        
     }
 }
