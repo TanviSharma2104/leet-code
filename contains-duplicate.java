@@ -19,3 +19,16 @@ class Solution {
         return flag;
     }
 }
+
+//or using hash set
+
+HashSet<Integer> set=new HashSet<>();
+        for(int a:nums){
+            if(set.contains(a)){
+                return true;
+            }
+            else{
+                set.add(a);
+            }
+        }
+        return false;
